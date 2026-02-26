@@ -1,0 +1,43 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: system-ui, Helvetica, Arial, sans-serif;
+}
+
+html {
+  scroll-snap-type: y mandatory;
+}
+
+section {
+  scroll-snap-align: start;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 30px;
+}
+
+.section-1 {
+  background-color: rgb(20, 20, 20);
+}
+.section-2 {
+  background-color: rgb(25, 25, 25);
+}
+.section-3 {
+  background-color: rgb(30, 30, 30);
+}
+.section-4 {
+  background-color: rgb(35, 35, 35);
+}
+.section-5 {
+  background-color: rgb(40, 40, 40);
+}
+.section-6 {
+  background-color: rgb(45, 45, 45);
+}
