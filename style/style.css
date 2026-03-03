@@ -6,6 +6,19 @@
 
 :root {
   font-family: system-ui, Helvetica, Arial, sans-serif;
+
+  /* LIGHT VARIABLES */
+
+  --bg-color: rgb(rgb(245, 150, 30));
+  --text: rgb(240, 240, 240);
+  --box: rgb(125, 117, 225);
+}
+
+.dark-mode {
+  /* DARK VARIABLES */
+  --bg-color: rgb(rgb(245, 150, 30));
+  --text: rgb(240, 240, 240);
+  --box: rgb(125, 117, 225);
 }
 
 html {
@@ -16,37 +29,35 @@ html {
 header {
   position: fixed;
   display: flex;
-  justify-content: end;
+  justify-content: center;
   align-items: center;
   width: 100%;
   padding: 20px;
 }
 
+h1 {
+  font-size: 20px;
+}
+
 nav {
   display: flex;
-  flex-direction: column;
   flex-wrap: wrap;
   gap: 10px;
+  padding: 10px 20px;
+  border: 1px solid white;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(30px);
 }
 
 nav a.active {
   color: black;
   font-weight: bold;
-  transform: scale(1.1);
-}
-
-nav a::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -5px;
-  width: 0%;
-  height: 2px;
-  transition: width 0.3s ease;
+  transform: scale(1.05);
 }
 
 nav a:hover {
-  color: black;
+  transform: scale(0.95);
 }
 
 nav a.active::after {
@@ -70,12 +81,20 @@ section {
   justify-content: center;
   align-items: center;
   color: white;
-  font-size: 30px;
 }
 
 .section-1 {
   background-color: rgb(245, 150, 30);
 }
+
+.hero-img {
+  border: 1px solid black;
+  height: 200px;
+  width: 200px;
+  border-radius: 12px;
+  margin-top: 20px;
+}
+
 .section-2 {
   background-color: rgb(240, 145, 28);
 }
@@ -88,8 +107,43 @@ section {
 .section-5 {
   background-color: rgb(225, 125, 22);
 }
-.section-6 {
-  background-color: rgb(220, 115, 15);
+
+.carousel-container {
+  min-width: 300px;
+  max-width: 600px;
+  width: 100%;
+  overflow: hidden;
+
+  margin: 50px auto;
+}
+
+.carousel-track {
+  display: flex;
+  animation: scroll 10s linear infinite;
+}
+
+.carousel-item {
+  margin: 0 10px;
+  background: #045cba;
+  color: white;
+  text-align: center;
+  font-size: 24px;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.carousel-img {
+  width: 50px;
+  height: 50px;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-650px);
+  }
 }
 
 @media (min-width: 768px) {
