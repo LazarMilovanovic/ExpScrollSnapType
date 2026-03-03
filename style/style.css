@@ -32,11 +32,7 @@ header {
   justify-content: center;
   align-items: center;
   width: 100%;
-  padding: 20px;
-}
-
-h1 {
-  font-size: 20px;
+  padding: 10px;
 }
 
 nav {
@@ -81,10 +77,18 @@ section {
   justify-content: center;
   align-items: center;
   color: white;
+  padding: 0 15px;
 }
 
-.section-1 {
+.hero {
   background-color: rgb(245, 150, 30);
+}
+
+.hero__contact-me {
+  margin: 10px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .hero-img {
@@ -101,11 +105,13 @@ section {
 .section-3 {
   background-color: rgb(235, 140, 26);
 }
+
+.experience-soprex {
+  padding: 10px;
+}
+
 .section-4 {
   background-color: rgb(230, 135, 24);
-}
-.section-5 {
-  background-color: rgb(225, 125, 22);
 }
 
 .carousel-container {
@@ -135,6 +141,17 @@ section {
 .carousel-img {
   width: 50px;
   height: 50px;
+}
+
+.contact-me-btn {
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 12px;
+  background: transparent;
+}
+
+.contact-me-btn:hover {
+  background-color: rgb(132, 132, 243);
 }
 
 @keyframes scroll {

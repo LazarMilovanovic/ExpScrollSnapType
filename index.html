@@ -10,7 +10,7 @@
   <body>
     <header>
       <nav>
-        <a href="#section-1">
+        <a href="#hero">
           <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 256 256" width="32" height="32" xmlns="http://www.w3.org/2000/svg">
             <path
               d="M219.31,108.68l-80-80a16,16,0,0,0-22.62,0l-80,80A15.87,15.87,0,0,0,32,120v96a8,8,0,0,0,8,8H216a8,8,0,0,0,8-8V120A15.87,15.87,0,0,0,219.31,108.68ZM208,208H48V120l80-80,80,80Z"
@@ -42,20 +42,30 @@
     </header>
     <!--  -->
     <main>
-      <section class="section-1" id="section-1">
+      <section class="hero" id="hero">
         <p>Hello, I'm</p>
         <h1>Lazar Milovanovic</h1>
         <p>I'm Frontend Developer</p>
         <img class="hero-img" src="#" alt="Avatar" />
-        <div>Here put linkedIn and GitHub</div>
+        <div class="hero__contact-me">
+          <a href="#">
+            <img src="images/logos/linkedin.svg" alt="LinkedIn" height="16" width="16" />
+            LinkedIn
+          </a>
+          <a href="#">
+            <img src="images/logos/github-dark.svg" alt="GitHub" height="16" width="16" />
+            LinkedIn
+          </a>
+        </div>
+        <h2>About me</h2>
         <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio saepe quae minus deserunt iste! Dolorum consequuntur at impedit ullam expedita corrupti eligendi iure. In, accusamus. Facilis
-          repudiandae quasi consequuntur harum!
+          As a junior Frontend Developer, I am eager to learn, grow, and take on new challenges. I am open to work opportunities where I can contribute, improve my technical skills, and gain valuable
+          experience in a professional environment.
         </p>
       </section>
       <!--  -->
       <section class="section-2" id="section-2">
-        SKILLS
+        <h2>SKILLS</h2>
         <div class="carousel-container">
           <div class="carousel-track">
             <div class="carousel-item">
@@ -118,23 +128,37 @@
           </div>
         </div>
 
-        <div>Projects</div>
+        <div>
+          <h2>Projects</h2>
+          <div class="card"></div>
+        </div>
+        <!--  -->
       </section>
       <section class="section-3" id="section-3">
-        <div>
-          <p>Experience</p>
-          <p>Soprex</p>
+        <h2>Experience</h2>
+        <div class="experience-soprex">
+          <div>
+            <p>Frontend Developer Inter</p>
+            <h3>Soprex</h3>
+            <p>
+              The sun dipped below the horizon, painting the sky with shades of orange and pink. A gentle breeze whispered through the trees, carrying the scent of blooming flowers across the quiet
+              meadow.
+            </p>
+          </div>
         </div>
         <div>
           <p>Education</p>
           <p>The School of Electrical and Computer Engineering of Applied Studies</p>
         </div>
       </section>
+      <!--  -->
       <section class="section-4" id="section-4">
-        CONTACT
+        <h2>Contact me</h2>
         <br />
-        <button onclick="window.location.href = 'mailto:tvojemail@gmail.com'">Contact me</button>
+        <button class="contact-me-btn" onclick="window.location.href = 'mailto:milazar002@gmail.com'">Contact me</button>
+        <a href="/cv.pdf" target="_blank" rel="noopener noreferrer">View CV </a>
       </section>
+      <!--  -->
     </main>
     <footer></footer>
     <script src="script/script.js"></script>
