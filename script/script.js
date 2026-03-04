@@ -1,5 +1,6 @@
 const sections = document.querySelectorAll("section");
 const navLinks = document.querySelectorAll("nav a");
+const githubLogo = document.getElementById("github");
 
 const btn = document.getElementById("themeToggle");
 
@@ -8,8 +9,10 @@ btn.addEventListener("click", () => {
 
   if (document.body.classList.contains("dark")) {
     btn.textContent = "☀️";
+    githubLogo.src = "images/logos/github-light.svg";
   } else {
     btn.textContent = "🌙";
+    githubLogo.src = "images/logos/github-dark.svg";
   }
 });
 

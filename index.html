@@ -46,28 +46,29 @@
     <main>
       <section class="hero" id="hero">
         <p>Hello, I'm</p>
-        <h1>Lazar Milovanović</h1>
+        <h1 class="hero-title">Lazar Milovanović</h1>
         <p>I'm Frontend Developer</p>
         <img class="hero-img" src="images/favIcon.jpeg" alt="Avatar" />
         <div class="hero__contact-me">
           <a href="https://www.linkedin.com/in/lazar-milovanovic-a97642308/" target="_blank">
-            <img src="images/logos/linkedin.svg" alt="LinkedIn" height="16" width="16" />
-            <p>LinkedIn</p>
+            <img src="images/logos/linkedin.svg" alt="LinkedIn" height="24" width="24" />
+          </a>
+          <a href="mailto:tvojemail@gmail.com" target="_blank">
+            <img src="images/logos/gmail.svg" alt="Gmail" height="24" width="24" />
           </a>
           <a href="https://github.com/LazarMilovanovic" target="_blank">
-            <img src="images/logos/github-dark.svg" alt="GitHub" height="16" width="16" />
-            GitHub
+            <img src="images/logos/github-dark.svg" alt="GitHub" height="24" width="24" id="github" />
           </a>
         </div>
-        <h2>About me</h2>
-        <p>
+        <h2 class="about-heading">About me</h2>
+        <p class="about-text">
           As a junior Frontend Developer, I am eager to learn, grow, and take on new challenges. I am open to work opportunities where I can contribute, improve my technical skills, and gain valuable
           experience in a professional environment.
         </p>
       </section>
       <!--  -->
       <section class="skills" id="skills">
-        <h2>SKILLS</h2>
+        <h2>Skills</h2>
         <div class="carousel-container">
           <div class="carousel-track">
             <div class="carousel-item">
@@ -138,29 +139,33 @@
       </section>
       <section class="experience" id="experience">
         <h2>Experience</h2>
-        <div>
-          <div>
-            <p>Frontend Developer Inter</p>
-            <h3>Soprex</h3>
-            <p>Sep 2025 - Mar 2026</p>
+
+        <div class="work-card">
+          <div class="card-header">
+            <p class="role-title">Frontend Developer Intern</p>
+            <div class="card-bubbles">
+              <span class="company-name">Soprex</span>
+              <span class="date-badge">Sep 2025 – Mar 2026</span>
+            </div>
+          </div>
+          <div class="card-body">
             <p>
               During my internship, I worked on various projects and assignments designed by my mentors to strengthen my frontend development skills. Although I did not participate in a large-scale
               production project, I gained valuable experience through hands-on practice and by attending client meetings, where I observed real-world communication and project discussions.
             </p>
           </div>
         </div>
-        <div>
-          <p>Education</p>
-          <p>The School of Electrical and Computer Engineering of Applied Studies</p>
+
+        <div class="edu-card">
+          <div class="edu-icon">🎓</div>
+          <div class="edu-content">
+            <h3>Education</h3>
+            <p>The School of Electrical and Computer Engineering of Applied Studies</p>
+          </div>
         </div>
       </section>
       <!--  -->
-      <section class="contact" id="contact">
-        <h2>Contact me</h2>
-        <br />
-        <button class="contact-me-btn" onclick="window.location.href = 'mailto:milazar002@gmail.com'">Contact me</button>
-        <a href="/cv.pdf" target="_blank" rel="noopener noreferrer">View CV </a>
-      </section>
+      <section class="contact" id="contact"></section>
       <!--  -->
     </main>
     <footer></footer>
