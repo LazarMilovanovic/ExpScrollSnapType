@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="images/favIcon-circle.png" type="image/x-icon" />
     <link rel="stylesheet" href="style/style.css" />
     <title>Lazar Milovanović</title>
   </head>
@@ -10,51 +11,52 @@
   <body>
     <header>
       <nav>
-        <a href="#hero">
-          <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 256 256" width="32" height="32" xmlns="http://www.w3.org/2000/svg">
+        <a href="#hero" data-title="Home" class="nav-link">
+          <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 256 256" width="28" height="28" xmlns="http://www.w3.org/2000/svg">
             <path
               d="M219.31,108.68l-80-80a16,16,0,0,0-22.62,0l-80,80A15.87,15.87,0,0,0,32,120v96a8,8,0,0,0,8,8H216a8,8,0,0,0,8-8V120A15.87,15.87,0,0,0,219.31,108.68ZM208,208H48V120l80-80,80,80Z"
             ></path>
           </svg>
         </a>
-        <a href="#section-2">
-          <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 256 256" width="32" height="32" xmlns="http://www.w3.org/2000/svg">
+        <a href="#skills" data-title="Skills and Projects" class="nav-link">
+          <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 256 256" width="28" height="28" xmlns="http://www.w3.org/2000/svg">
             <path
               d="M232,168h-8V72a24,24,0,0,0-24-24H56A24,24,0,0,0,32,72v96H24a8,8,0,0,0-8,8v16a24,24,0,0,0,24,24H216a24,24,0,0,0,24-24V176A8,8,0,0,0,232,168ZM48,72a8,8,0,0,1,8-8H200a8,8,0,0,1,8,8v96H48ZM224,192a8,8,0,0,1-8,8H40a8,8,0,0,1-8-8v-8H224ZM152,88a8,8,0,0,1-8,8H112a8,8,0,0,1,0-16h32A8,8,0,0,1,152,88Z"
             ></path>
           </svg>
         </a>
-        <a href="#section-3">
-          <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 256 256" width="32" height="32" xmlns="http://www.w3.org/2000/svg">
+        <a href="#experience" data-title="Experience" class="nav-link">
+          <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 256 256" width="28" height="28" xmlns="http://www.w3.org/2000/svg">
             <path
               d="M216,56H176V48a24,24,0,0,0-24-24H104A24,24,0,0,0,80,48v8H40A16,16,0,0,0,24,72V200a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V72A16,16,0,0,0,216,56ZM96,48a8,8,0,0,1,8-8h48a8,8,0,0,1,8,8v8H96Zm64,24V200H96V72ZM40,72H80V200H40ZM216,200H176V72h40V200Z"
             ></path>
           </svg>
         </a>
-        <a href="#section-4">
-          <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 256 256" width="32" height="32" xmlns="http://www.w3.org/2000/svg">
+        <a href="#contact" data-title="Contact" class="nav-link">
+          <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 256 256" width="28" height="28" xmlns="http://www.w3.org/2000/svg">
             <path
               d="M224,48H32a8,8,0,0,0-8,8V192a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V56A8,8,0,0,0,224,48Zm-96,85.15L52.57,64H203.43ZM98.71,128,40,181.81V74.19Zm11.84,10.85,12,11.05a8,8,0,0,0,10.82,0l12-11.05,58,53.15H52.57ZM157.29,128,216,74.18V181.82Z"
             ></path>
           </svg>
         </a>
+        <button class="theme-btn" id="themeToggle" data-title="Toggle Theme">🌙</button>
       </nav>
     </header>
     <!--  -->
     <main>
       <section class="hero" id="hero">
         <p>Hello, I'm</p>
-        <h1>Lazar Milovanovic</h1>
+        <h1>Lazar Milovanović</h1>
         <p>I'm Frontend Developer</p>
-        <img class="hero-img" src="#" alt="Avatar" />
+        <img class="hero-img" src="images/favIcon.jpeg" alt="Avatar" />
         <div class="hero__contact-me">
-          <a href="#">
+          <a href="https://www.linkedin.com/in/lazar-milovanovic-a97642308/" target="_blank">
             <img src="images/logos/linkedin.svg" alt="LinkedIn" height="16" width="16" />
-            LinkedIn
+            <p>LinkedIn</p>
           </a>
-          <a href="#">
+          <a href="https://github.com/LazarMilovanovic" target="_blank">
             <img src="images/logos/github-dark.svg" alt="GitHub" height="16" width="16" />
-            LinkedIn
+            GitHub
           </a>
         </div>
         <h2>About me</h2>
@@ -64,7 +66,7 @@
         </p>
       </section>
       <!--  -->
-      <section class="section-2" id="section-2">
+      <section class="skills" id="skills">
         <h2>SKILLS</h2>
         <div class="carousel-container">
           <div class="carousel-track">
@@ -134,15 +136,16 @@
         </div>
         <!--  -->
       </section>
-      <section class="section-3" id="section-3">
+      <section class="experience" id="experience">
         <h2>Experience</h2>
-        <div class="experience-soprex">
+        <div>
           <div>
             <p>Frontend Developer Inter</p>
             <h3>Soprex</h3>
+            <p>Sep 2025 - Mar 2026</p>
             <p>
-              The sun dipped below the horizon, painting the sky with shades of orange and pink. A gentle breeze whispered through the trees, carrying the scent of blooming flowers across the quiet
-              meadow.
+              During my internship, I worked on various projects and assignments designed by my mentors to strengthen my frontend development skills. Although I did not participate in a large-scale
+              production project, I gained valuable experience through hands-on practice and by attending client meetings, where I observed real-world communication and project discussions.
             </p>
           </div>
         </div>
@@ -152,7 +155,7 @@
         </div>
       </section>
       <!--  -->
-      <section class="section-4" id="section-4">
+      <section class="contact" id="contact">
         <h2>Contact me</h2>
         <br />
         <button class="contact-me-btn" onclick="window.location.href = 'mailto:milazar002@gmail.com'">Contact me</button>
