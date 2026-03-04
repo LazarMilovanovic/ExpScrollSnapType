@@ -192,6 +192,10 @@ section:nth-child(odd) {
   background-color: var(--bg-surface);
 }
 
+/* /////////////////// */
+/* START HERO SECTION */
+/* ///////////////// */
+
 .hero {
   background-color: rgb(245, 150, 30);
 }
@@ -218,7 +222,6 @@ section:nth-child(odd) {
 }
 
 .hero-img {
-  border: 1px solid black;
   height: 200px;
   width: 200px;
   border-radius: 12px;
@@ -233,6 +236,10 @@ section:nth-child(odd) {
   margin: 0 10px;
   text-align: center;
 }
+
+/* ///////////////// */
+/* END HERO SECTION */
+/* /////////////// */
 
 .carousel-container {
   width: 100%;
@@ -605,14 +612,6 @@ section:nth-child(odd) {
   background: var(--bg-elevated);
 }
 
-.contact-card--cv {
-  background: linear-gradient(135deg, var(--bg-elevated), var(--bg-overlay));
-  border-color: var(--border-default);
-}
-.contact-card--cv:hover {
-  background: linear-gradient(135deg, var(--bg-overlay), var(--bg-active));
-}
-
 .contact-card-icon {
   font-size: 1.6rem;
   margin-bottom: 0.2rem;
@@ -632,31 +631,4 @@ section:nth-child(odd) {
 }
 .contact-card:hover .contact-card-value {
   color: var(--text-link);
-}
-
-/* @media (max-width: 480px) {
-  .contact-links {
-    grid-template-columns: 1fr;
-  }
-} */
-
-/* ── Responsive ── */
-@media (max-width: 780px) {
-  .page {
-    grid-template-columns: 1fr;
-    padding: 3rem 1.5rem;
-    gap: 3rem;
-  }
-  .form-row {
-    grid-template-columns: 1fr;
-  }
-  h1 {
-    font-size: 3rem;
-  }
-}
-
-@media (min-width: 768px) {
-  nav {
-    flex-direction: row;
-  }
 }
