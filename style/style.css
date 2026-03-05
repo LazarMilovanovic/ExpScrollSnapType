@@ -326,7 +326,6 @@ section:nth-child(odd) {
   cursor: default;
   transition:
     transform 0.25s ease,
-    background 0.25s ease,
     border-color 0.25s ease,
     box-shadow 0.25s ease;
   min-width: 110px;
@@ -798,10 +797,6 @@ section:nth-child(odd) {
   border-radius: 16px;
   text-decoration: none;
   box-shadow: 0 2px 12px var(--shadow-sm);
-  transition:
-    transform 0.22s ease,
-    box-shadow 0.22s ease,
-    background 0.22s ease;
   position: relative;
   overflow: hidden;
 }
@@ -844,4 +839,30 @@ section:nth-child(odd) {
 }
 .contact-card:hover .contact-card-value {
   color: var(--text-link);
+}
+
+/* WebKit - Chrome, Edge, Safari */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-surface);
+  border-radius: 10px;
+  border: 1px solid var(--border-subtle);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--accent-primary);
+  border-radius: 10px;
+  border: 2px solid var(--bg-surface);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-warm);
+}
+
+::-webkit-scrollbar-thumb:active {
+  background: var(--accent-ember);
 }
